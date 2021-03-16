@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
   res.send(msgs);
 });
 
+app.post('/', (req, res) => {
+  res.send(msgs);
+});
+
 // starting the server
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
